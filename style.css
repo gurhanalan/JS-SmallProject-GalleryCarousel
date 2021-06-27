@@ -12,6 +12,7 @@ html {
     font-size: 62.5%;
 
     --color-1: yellowgreen;
+    --color-2: rgb(199, 247, 104);
 }
 
 body {
@@ -31,8 +32,8 @@ body {
 
     position: relative;
 
-    width: 50rem;
-    height: 40rem;
+    /* width: 50rem;
+    height: 40rem; */
 }
 
 .gallery__btn {
@@ -51,6 +52,10 @@ body {
     z-index: 10;
 }
 
+.gallery__btn:active {
+    color: var(--color-2);
+}
+
 .gallery__btn--left {
     left: 2rem;
 }
@@ -65,9 +70,44 @@ body {
 
 .gallery__content__box {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
-.gallery__content__box img {
+
+.gallery__content__box--primary {
+    width: 100%;
+    height: 100%;
+}
+.gallery__content__box--primary img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.gallery__content__box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery__dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 0.5rem;
+}
+
+.gallery__dots__dot {
+    background-color: var(--color-1);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.gallery__dots__dot--active {
+    background-color: var(--color-2);
 }
