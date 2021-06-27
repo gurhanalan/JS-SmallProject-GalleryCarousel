@@ -13,8 +13,32 @@
         <title>Gallery Carousel</title>
     </head>
     <body>
-        <h1>Gallery Carousel</h1>
+        <!-- <h1>Gallery Carousel</h1> -->
 
+        <section class="gallery">
+            <button class="gallery__btn gallery__btn--left">
+                <i class="fas fa-caret-left"></i>
+            </button>
+            <button class="gallery__btn gallery__btn--right">
+                <i class="fas fa-caret-right"></i>
+            </button>
+
+            <div class="gallery__content">
+                <div class="gallery__content__box">
+                    <img src="img/gallery-1.jpg" alt="" />
+                </div>
+                <div class="gallery__content__box">
+                    <img src="img/gallery-2.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="gallery__dots">
+                <div class="gallery__dots__dot"></div>
+                <div
+                    class="gallery__dots__dot gallery__dots__dot--active"
+                ></div>
+            </div>
+        </section>
         <script src="script.js"></script>
     </body>
 </html>
