@@ -22,7 +22,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
 }
 
@@ -74,6 +74,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
+    transition: transform 0.3s;
 }
 
 .gallery__content__box--primary {
